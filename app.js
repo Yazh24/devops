@@ -4,7 +4,7 @@ const PORT = process.env.PORT || 3000;
 const name = "CodeTest";
 
 app.get("/", (req, res) => {
-    const message = `Welcome to DevOps Easy  from RMC - Modified`
+    const message = `Welcome to DevOps Easy  from CMR - Modified`
     res.send(message);
 })
 

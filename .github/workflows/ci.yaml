@@ -1,36 +1,23 @@
 name: CI Pipeline
 
-on: 
-  push:
+
+on:
+  push: 
     branches:
-     - main
+      - main
 
 jobs:
-  test:
+  test: 
     runs-on: ubuntu-latest
-    steps:
+    steps: 
       - name: Checkout code
-<<<<<<< HEAD
         uses: actions/checkout@v3
 
       - name: Setup Node.js
-        uses: actions/setup=node@v3 
+        uses: actions/setup-node@v3 
 
       - name: Install Dependencies
         run: npm Install
-=======
-        uses: actions/checkout@v3 
->>>>>>> e8f3cb52a513ac466c1c244487a205342f4f6d28
       
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-      
-      - name: Install Dependencies
-        run: npm install 
-
       - name: Run Tests
-<<<<<<< HEAD
         run: npx jest test/app.test.js  
-=======
-        run: npm test
->>>>>>> e8f3cb52a513ac466c1c244487a205342f4f6d28
